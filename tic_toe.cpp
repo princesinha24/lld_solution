@@ -118,12 +118,17 @@ class Board{
         }
 };
 int main(){
+    string name1,name2;
+    cout<<"Enter Player 1 name \n";
+    cin>>name1;
+    cout<<"Enter Player 2 name \n";
+    cin>>name2;
     int n;
     cout<<"Enter size of Board \n";
     cin>>n;
     Board* board= new Board(n);
-    Player* p1=new Player(1,"Prince");
-    Player* p2=new Player(2,"Roshan");
+    Player* p1=new Player(1,name1);
+    Player* p2=new Player(2,name2);
     int x,y;
     for(int i=0;i<n*n;){
         if(board->winner){
