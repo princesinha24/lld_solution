@@ -118,7 +118,9 @@ class Board{
         }
 };
 int main(){
-    int n=3;
+    int n;
+    cout<<"Enter size of Board \n";
+    cin>>n;
     Board* board= new Board(n);
     Player* p1=new Player(1,"Prince");
     Player* p2=new Player(2,"Roshan");
